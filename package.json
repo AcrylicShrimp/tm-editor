@@ -1,0 +1,20 @@
+{
+	"name": "tm-editor",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/main.js",
+	"scripts": {
+		"dev": "npx tsc && npx electron ./build/main.js"
+	},
+	"keywords": [],
+	"author": "AcrylicShrimp",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"electron": "^7.1.11",
+		"eslint": "^6.8.0",
+		"typescript": "^3.7.5"
+	},
+	"dependencies": {}
+}
