@@ -4,17 +4,40 @@
 	"description": "",
 	"main": "src/main.js",
 	"scripts": {
-		"dev": "npx tsc && npx electron ./build/main.js"
+		"dev": "webpack && npx electron ./build/main.js",
+		"prd": "NODE_ENV=production webpack && npx electron ./build/main.js"
 	},
 	"keywords": [],
 	"author": "AcrylicShrimp",
 	"license": "ISC",
 	"devDependencies": {
+		"@types/classnames": "^2.2.9",
+		"@types/html-webpack-plugin": "^3.2.2",
+		"@types/node": "^13.7.0",
+		"@types/react": "^16.9.19",
+		"@types/react-dom": "^16.9.5",
+		"@types/react-helmet": "^5.0.15",
+		"@types/webpack": "^4.41.4",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"@typescript-eslint/parser": "^2.18.0",
+		"classnames": "^2.2.6",
+		"css-loader": "^3.4.2",
 		"electron": "^7.1.11",
 		"eslint": "^6.8.0",
-		"typescript": "^3.7.5"
+		"html-webpack-plugin": "^3.2.0",
+		"incstr": "^1.2.3",
+		"jimp": "^0.9.3",
+		"node-sass": "^4.13.1",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-helmet": "^5.2.1",
+		"sass-loader": "^8.0.2",
+		"style-loader": "^1.1.3",
+		"ts-loader": "^6.2.1",
+		"ts-node": "^8.6.2",
+		"typescript": "^3.7.5",
+		"webpack": "^4.41.5",
+		"webpack-cli": "^3.3.10"
 	},
 	"dependencies": {}
 }
